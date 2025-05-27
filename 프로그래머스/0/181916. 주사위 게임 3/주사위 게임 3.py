@@ -4,43 +4,43 @@ def solution(a, b, c, d):
     if a == b == c == d :
         answer = a * 1111
         
-    elif a == b == c != d :
+    elif a == b == c :
         answer = (10 * a + d)**2
         
-    elif a == b == d != c :
+    elif a == b == d :
         answer = (10 * a + c)**2
         
-    elif a == c == d != b :
+    elif a == c == d :
         answer = (10 * a + b)**2
         
-    elif b == c == d != a :
+    elif b == c == d :
         answer = (10 * b + a)**2
         
-    elif a == b and c == d and a != c :
+    elif a == b and c == d :
         answer = (a + c) * abs(a-c)
         
-    elif a == c and b == d and a != b :
+    elif a == c and b == d :
         answer = (a + b) * abs(a-b)
         
-    elif a == d and b == c and a != b :
+    elif a == d and b == c :
         answer = (a + b) * abs(a-b)
         
-    elif a == b and c != d :
+    elif a == b :
         answer = c * d
         
-    elif a == c and b != d :
+    elif a == c :
         answer = b * d
         
-    elif a == d and b != c :
+    elif a == d :
         answer = b * c
         
-    elif b == d and a != c :
+    elif b == d :
         answer = a * c
         
-    elif b == c and a != d :
+    elif b == c :
         answer = a * d
         
-    elif c == d and a != b :
+    elif c == d :
         answer = a * b
         
     else :
