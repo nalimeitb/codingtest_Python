@@ -10,7 +10,7 @@ def solution(n):
                 break
             
     set1 = set(list1)
-    
+    # answer = list(set1)
     answer = sorted(list(set1))
     
     
