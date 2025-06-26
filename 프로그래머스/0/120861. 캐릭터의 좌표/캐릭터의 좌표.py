@@ -1,12 +1,12 @@
 def solution(keyinput, board):
-    answer = []
+    
+    answer = [0, 0]
     
     #left => x좌표 : -1
     #right => x좌표 : +1
     #up => y좌표 : +1
     #down => y좌표 : -1
     
-    answer = [0, 0]
     
     for i in keyinput :
         if i == "left" :
