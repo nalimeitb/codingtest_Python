@@ -7,7 +7,6 @@ def solution(keyinput, board):
     #up => y좌표 : +1
     #down => y좌표 : -1
     
-    
     for i in keyinput :
         if i == "left" :
             answer[0] = answer[0] - 1
