@@ -1,5 +1,8 @@
 def solution(dots):
     answer = 0
+    
+    # answer = abs(dots[0][0] - dots[1][0]) * abs(dots[1][1] - dots[2][1])
+    
     list1 = list()
     list2 = list()
     
