@@ -10,7 +10,4 @@ def solution(arr):
             continue
         
     
-    
-    
-    
     return answer
