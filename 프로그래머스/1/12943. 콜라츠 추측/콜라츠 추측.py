@@ -2,11 +2,8 @@ def solution(num):
     answer = 0
     a = 0
     
-    while True :
+    while num != 1 :
         a = a + 1
-        if num == 1 :
-            answer = 0
-            break
             
         if num % 2 == 0 :
             num = int(num/2)
