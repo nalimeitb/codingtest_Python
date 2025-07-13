@@ -1,7 +1,7 @@
 def solution(num, total):
     answer = []
     
-    for i in range(-100, 1000, 1) :
+    for i in range(-50, 1000, 1) :
         sum1 = 0
         answer = []
         for j in range(i, i + num) :
