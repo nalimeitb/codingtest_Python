@@ -48,7 +48,7 @@ def solution(n):
             y = y + 1
             state = 0
     
-    
+#     마지막 시행착오
 #     for i in range(n) :
 #         answer.append([])
 #         for k in range(n) :
