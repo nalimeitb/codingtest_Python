@@ -1,23 +1,21 @@
 def solution(l, r):
     answer = []
-    val = ''
     i = 0
+    tmp = ''
     
     while True :
         i = i + 1
-        val = bin(i)
-        val = val[2:]
-        val = val.replace('1', '5')
-        val = int(val)
-        if val < l :
+        tmp = bin(i)
+        tmp = tmp[2:]
+        tmp = tmp.replace('1','5')
+        if int(tmp) < l :
             continue
-        elif l <= val <= r :
-            answer.append(val)
-        elif val > r :
+        elif l <= int(tmp) <= r :
+            answer.append(int(tmp))
+        else :
             break
             
     if answer == [] :
         answer = [-1]
-    
-    
+            
     return answer
