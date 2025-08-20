@@ -1,11 +1,12 @@
 def solution(my_string):
     answer = []
-    set1 = ('1', '2', '3', '4', '5', '6', '7', '8', '9', '0')
     
-    for i in range(len(my_string)) :
-        if my_string[i] in set1 :
-            answer.append(int(my_string[i]))
-        
-    answer = sorted(answer)
+    set = ("0", "1", "2", "3", "4", '5', "6", "7", "8", "9")
+    
+    for i in my_string :
+        if i in set :
+            answer.append(int(i))
+    
+    answer.sort()
     
     return answer
