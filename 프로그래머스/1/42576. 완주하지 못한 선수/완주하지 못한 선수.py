@@ -1,19 +1,38 @@
 def solution(participant, completion):
     answer = ''
-    
-    # 7차시도
-    dic = dict()
+    dic1 = dict()
     
     for i in participant :
-        dic[i] = dic.get(i, 0) + 1
+        dic1[i] = dic1.get(i,0) + 1
     
     for i in completion :
-        dic[i] = dic[i] - 1
-            
-    for i in dic :
-        if dic[i] != 0 :
-            answer = i
+        dic1[i] = dic1[i] - 1
+    
+    for x, y in dic1.items() :
+        if y != 0 :
+            answer = x
             break
+    
+    
+    
+    
+    
+    
+    
+    
+#     # 7차시도
+#     dic = dict()
+    
+#     for i in participant :
+#         dic[i] = dic.get(i, 0) + 1
+    
+#     for i in completion :
+#         dic[i] = dic[i] - 1
+            
+#     for i in dic :
+#         if dic[i] != 0 :
+#             answer = i
+#             break
     
     # 6차시도
     # if len(set(participant)) != len(set(completion)) :
