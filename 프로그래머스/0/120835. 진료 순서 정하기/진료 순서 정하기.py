@@ -1,12 +1,12 @@
 def solution(emergency):
     answer = []
-    dict1 = {}
-    list1 = sorted(emergency, reverse = True)
+    list1 = emergency[:]
     
-    for i in range(len(list1)) :
-        dict1[list1[i]] = i+1
-        
+    list1 = sorted(list1, reverse = True)
+    
     for i in emergency :
-        answer.append(dict1[i])
+        answer.append(list1.index(i)+1)
+        
+        
     
     return answer
