@@ -1,11 +1,10 @@
 def solution(numbers):
     answer = 0
-    list1 = list()
+    answer = max(numbers)
     
-    for i in range(len(numbers)) :
-        for k in range(i+1, len(numbers)) :
-            list1.append(numbers[i]*numbers[k])
+    max_index = numbers.index(max(numbers))
+    numbers.pop(max_index)
     
-    answer = max(list1)
+    answer = answer * max(numbers)
     
     return answer
