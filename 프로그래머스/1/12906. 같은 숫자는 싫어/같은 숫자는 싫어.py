@@ -1,4 +1,7 @@
 def solution(arr):
+    # answer = []
+
+# stack을 이용한 풀이
     stack = []
     tmp = None
     
